@@ -5,6 +5,7 @@
         <li><ClockIcon /> See our store hours and services</li>
         <li><CheckIcon /> We price match to give you the best deals</li>
       </ul>
+      <img src="../assets/img/banner-5-2x-scaled.jpg" alt="">
   </section>
 </template>
 
@@ -23,9 +24,11 @@ export default {
 
 <style scoped lang="scss">
   .jumbotron {
-    height: 100vh;
     background-color: blueviolet;
     background-image: url('../assets/img/bg-transparent-3.png');
+    img{
+      width: 100%;
+    }
   }
   ul{
     display: flex;

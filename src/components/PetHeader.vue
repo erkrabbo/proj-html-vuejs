@@ -37,7 +37,7 @@ export default {
     height: 4rem;
     justify-content: space-around;
     .badge{
-      border-radius: 1em;
+      border-radius: 3em;
       display: flex;
       align-items: center;
       background-color: lightgrey;
@@ -45,6 +45,9 @@ export default {
       input{
         border: 0;
         outline: 0;
+        height: 3em;
+        padding-right: 1em;
+        width: 40ch;
         background-color: transparent;
       }
       svg{

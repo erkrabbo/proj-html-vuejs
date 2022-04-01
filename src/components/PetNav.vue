@@ -23,6 +23,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  nav{
+    position: sticky;
+    top: 0;
+    height: 3.5rem;
+    background-color: white;
+  }
   ul{
     list-style: none;
     display: flex;

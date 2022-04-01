@@ -3,6 +3,7 @@
     <pet-header />
     <pet-nav />
     <pet-jumbo />
+    <pet-jumbo-offer />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import PetHeader from './components/PetHeader.vue'
 import PetNav from './components/PetNav.vue'
 import PetJumbo from './components/PetJumbo.vue'
+import PetJumboOffer from './components/PetJumboOffer.vue'
 
 export default {
   name: 'App',
   components: {
     PetHeader,
     PetNav,
-    PetJumbo
+    PetJumbo,
+    PetJumboOffer
   }
 }
 </script>
@@ -33,10 +36,5 @@ export default {
   body {
     font-family: 'Source Serif Pro', serif;
     height: 100vh;
-  }
-  nav{
-    position: sticky;
-    top: 0;
-    background-color: white;
   }
 </style>
