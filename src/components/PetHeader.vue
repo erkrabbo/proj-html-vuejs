@@ -2,7 +2,10 @@
   <header>
     <div class="header-top">
       <img src="../assets/img/dark-pet-logo.png" width="200" alt="">
-      <input type="text" placeholder="Search...">
+      <div class="badge">
+        <SearchIcon />
+        <input type="text" placeholder="Search...">
+      </div>
       <span>Questions? Call us: 333333333333</span>
       <div>
         <UserIcon />
@@ -10,29 +13,19 @@
       </div>
     </div>
     <hr>
-    <nav>
-      <ul>
-        <li>Home <ChevronDownIcon /></li>
-        <li>Shop <ChevronDownIcon /></li>
-        <li>About <ChevronDownIcon /></li>
-        <li>Blog <ChevronDownIcon /></li>
-        <li>Contact <ChevronDownIcon /></li>
-        <li>Shop by brand <ChevronDownIcon /></li>
-      </ul>
-    </nav>
   </header>
 </template>
 
 <script>
 // importo le icone che mi servono e le dichiaro come components
-import { UserIcon, ShoppingBagIcon, ChevronDownIcon } from 'vue-feather-icons'
+import { UserIcon, ShoppingBagIcon, SearchIcon } from 'vue-feather-icons'
 
 export default {
   name: 'PetHeader',
   components: {
     UserIcon,
     ShoppingBagIcon,
-    ChevronDownIcon
+    SearchIcon
   }
 }
 </script>
@@ -43,19 +36,27 @@ export default {
     align-items: center;
     height: 4rem;
     justify-content: space-around;
-  }
-  ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    li{
-      padding: 1em;
+    .badge{
+      border-radius: 1em;
       display: flex;
-      cursor: pointer;
+      align-items: center;
+      background-color: lightgrey;
+      overflow: hidden;
+      input{
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+      }
       svg{
-        height: 1em;
-        align-self: end;
+        margin: 0 .5em;
+        width: 1em
       }
     }
+  }
+  hr{
+    padding: 0;
+    border: 0;
+    height: 1px;
+    background-color: lightgrey;
   }
 </style>
