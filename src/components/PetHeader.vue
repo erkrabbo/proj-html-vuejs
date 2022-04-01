@@ -6,7 +6,7 @@
         <SearchIcon />
         <input type="text" placeholder="Search...">
       </div>
-      <span>Questions? Call us: 333333333333</span>
+      <span>Questions? Call us : 1.800.123.4567</span>
       <div>
         <UserIcon />
         <ShoppingBagIcon />

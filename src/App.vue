@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;1,600&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap);
 
   *{
     border: 0;
@@ -34,7 +34,7 @@ export default {
     box-sizing: border-box;
   }
   body {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Work Sans', sans-serif;
     height: 100vh;
   }
 </style>

@@ -3,9 +3,9 @@
       <ul>
         <li>Home <ChevronDownIcon /></li>
         <li>Shop <ChevronDownIcon /></li>
-        <li>About <ChevronDownIcon /></li>
-        <li>Blog <ChevronDownIcon /></li>
-        <li>Contact <ChevronDownIcon /></li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
         <li>Shop by brand <ChevronDownIcon /></li>
       </ul>
     </nav>
