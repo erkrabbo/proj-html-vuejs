@@ -1,12 +1,12 @@
 <template>
   <header>
     <div class="header-top">
-      <img src="../assets/img/dark-pet-logo.png" width="200" alt="">
+      <img src="../assets/img/dark-pet-logo.png" width="230" alt="">
       <div class="badge">
         <SearchIcon />
         <input type="text" placeholder="Search...">
       </div>
-      <span>Questions? Call us : 1.800.123.4567</span>
+      <span><span class="bold">Questions?&nbsp;</span>Call us : 1.800.123.4567</span>
       <div>
         <UserIcon />
         <ShoppingBagIcon />
@@ -40,14 +40,14 @@ export default {
       border-radius: 3em;
       display: flex;
       align-items: center;
-      background-color: lightgrey;
+      background-color: var(--LIGHT_BG);
       overflow: hidden;
       input{
         border: 0;
         outline: 0;
-        height: 3em;
+        height: 3.5em;
         padding-right: 1em;
-        width: 40ch;
+        width: 45ch;
         background-color: transparent;
       }
       svg{

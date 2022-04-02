@@ -1,14 +1,14 @@
 <template>
   <nav>
-      <ul>
-        <li>Home <ChevronDownIcon /></li>
-        <li>Shop <ChevronDownIcon /></li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>Shop by brand <ChevronDownIcon /></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><router-link to="/">Home<ChevronDownIcon /></router-link></li>
+      <li><router-link to="/shop">Shop<ChevronDownIcon /></router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/blog">Blog</router-link></li>
+      <li><router-link to="/contact">Contact</router-link></li>
+      <li><router-link to="/shopByBrand">Shop by brand<ChevronDownIcon /></router-link></li>
+    </ul>
+  </nav>
 </template>
 
 <script>
@@ -27,20 +27,29 @@ export default {
     position: sticky;
     top: 0;
     height: 3.5rem;
-    background-color: white;
+    background-color: var(--HEADER_BG);
+    a {
+      text-decoration: none;
+      color: var(--NAV_LINK_TEXT);
+      font-weight: var(--NAV_LINK_WEIGHT);
+      font-size: var(--NAV_LINK_SIZE);
+      display: flex;
+      svg{
+        height: 1em;
+        align-self: end;
+      }
+
+      &.router-link-exact-active {
+        color: var(--NAV_LINK_ACTIVE);
+      }
+    }
   }
   ul{
-    list-style: none;
     display: flex;
     justify-content: center;
     li{
       padding: 1em;
       display: flex;
-      cursor: pointer;
-      svg{
-        height: 1em;
-        align-self: end;
-      }
     }
   }
 </style>

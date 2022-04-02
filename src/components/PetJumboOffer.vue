@@ -14,16 +14,22 @@ export default {
 
 <style scoped lang="scss">
   .jumbo-offer-sticky{
-    background-color: blueviolet;
-    background-image: url('../assets/img/bg-transparent-3.png');
+    color: var(--TEXT_WHITE);
+    background-color: var(--JUMBOTRON_BG_COLOR);
+    background-image: var(--JUMBOTRON_BG_IMAGE);
     display: flex;
     align-items: center;
     justify-content: center;
     span{
       margin: 0 2em;
+      font-size: 1.2rem;
     }
     img{
       height: 100%;
+    }
+    a {
+      color: var(--GREEN_CONTRAST_TEXT);
+      font-size: 1.2rem;
     }
   }
 </style>
