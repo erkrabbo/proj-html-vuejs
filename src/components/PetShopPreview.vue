@@ -5,9 +5,7 @@
     <b-container>
       <b-row cols="4">
         <b-col v-for="(cat, index) in state.shopCategories" :key="index">
-          <p>
-            {{ cat.img }}
-          </p>
+          {{ cat.img }}
           {{ cat.cat }}
           {{ cat.items.length }}
         </b-col>
