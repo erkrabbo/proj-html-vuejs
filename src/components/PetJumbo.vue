@@ -37,7 +37,7 @@ export default {
       padding: 3em 5em;
       background-color: black;
       background:
-      linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+      linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
       var(--HERO_BANNER);
       background-position: center;
       background-size: cover;
@@ -46,9 +46,10 @@ export default {
         font-weight: 500;
       }
       p{
-        font-size: 50px;
-        max-width: 40%;
+        font-size: 3.5rem;
+        max-width: 50%;
         margin: 1rem 0;
+        font-family: 'Source Serif Pro', serif;
       }
     }
     img{
@@ -68,5 +69,10 @@ export default {
         height: 1em;
       }
     }
+  }
+  button{
+    margin: 2rem 0;
+    font-weight: 500;
+    font-size: .9rem;
   }
 </style>

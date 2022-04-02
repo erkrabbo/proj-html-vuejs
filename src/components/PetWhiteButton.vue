@@ -15,6 +15,12 @@ export default {
     background-color: white;
     border-radius: 2em;
     color: black;
-    padding: .5em 1em;
+    padding: .8em 1.3em;
+    &:hover{
+      color: white;
+      background:
+      linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+      #77ab82;
+    }
   }
 </style>

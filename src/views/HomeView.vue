@@ -1,19 +1,21 @@
 <template>
-  <div id="app">
+  <main class="home">
     <pet-jumbo />
     <pet-jumbo-offer />
-  </div>
+    <pet-shop-preview />
+  </main>
 </template>
 
 <script>
 import PetJumbo from '../components/PetJumbo.vue'
 import PetJumboOffer from '../components/PetJumboOffer.vue'
+import PetShopPreview from '../components/PetShopPreview.vue'
 
 export default {
-  name: 'App',
   components: {
     PetJumbo,
-    PetJumboOffer
+    PetJumboOffer,
+    PetShopPreview
   }
 }
 </script>

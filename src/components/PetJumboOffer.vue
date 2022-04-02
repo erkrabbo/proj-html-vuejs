@@ -1,9 +1,9 @@
 <template>
-  <div class="jumbo-offer-sticky">
+  <section class="jumbo-offer-sticky">
     <img src="../assets/img/food-transparent-5-200x112.png" alt="">
     <span>Get $25 OFF your first purchase of our homemade pet food!</span>
     <a href="#">Visit the shop!</a>
-  </div>
+  </section>
 </template>
 
 <script>
