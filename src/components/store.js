@@ -2,8 +2,8 @@ import Vue from 'vue'
 const state = Vue.observable({
   shopCategories: [
     {
-      img: 'immagine cat',
-      cat: 'Transport',
+      img: 'product-9.jpg',
+      cat: 'Bed',
       items: [
         'ciao',
         'ciao',
@@ -13,8 +13,8 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'immagine cat',
-      cat: 'Transport',
+      img: 'product-9.jpg',
+      cat: 'Food',
       items: [
         'ciao',
         'ciao',
@@ -26,8 +26,8 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'immagine cat',
-      cat: 'Transport',
+      img: 'product-9.jpg',
+      cat: 'Toys',
       items: [
         'ciao',
         'ciao',
@@ -36,7 +36,7 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'immagine cat',
+      img: 'product-9.jpg',
       cat: 'Transport',
       items: [
         'ciao',
