@@ -59,3 +59,36 @@ const router = new VueRouter({
 })
 
 export default router
+
+export const NAV_LINKS = [
+  {
+    path: '/',
+    name: 'Home',
+    chev: true
+  },
+  {
+    path: '/shop',
+    name: 'Shop',
+    chev: true
+  },
+  {
+    path: '/about',
+    name: 'About',
+    chev: false
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    chev: false
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    chev: false
+  },
+  {
+    path: '/shopByBrand',
+    name: 'Shop by brand',
+    chev: true
+  }
+]

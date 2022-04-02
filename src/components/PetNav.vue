@@ -1,23 +1,24 @@
 <template>
   <nav>
     <ul>
-      <li><router-link to="/">Home<ChevronDownIcon /></router-link></li>
-      <li><router-link to="/shop">Shop<ChevronDownIcon /></router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/blog">Blog</router-link></li>
-      <li><router-link to="/contact">Contact</router-link></li>
-      <li><router-link to="/shopByBrand">Shop by brand<ChevronDownIcon /></router-link></li>
+      <li v-for="(link, index) in navLinks" :key="index"><router-link :to="link.path">{{ link.name }}<ChevronDownIcon v-if="link.chev" /></router-link></li>
     </ul>
   </nav>
 </template>
 
 <script>
+import { NAV_LINKS } from '../router/index.js'
 import { ChevronDownIcon } from 'vue-feather-icons'
 
 export default {
   name: 'PetNav',
   components: {
     ChevronDownIcon
+  },
+  computed: {
+    navLinks () {
+      return NAV_LINKS
+    }
   }
 }
 </script>

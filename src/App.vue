@@ -21,4 +21,8 @@ export default {
 
 <style lang="scss">
   @import './assets/CSS/style.scss';
+  //https://avada.theme-fusion.com/pet-supplies/
+  //font-family: 'Source Serif Pro', serif;
+  // font-family: 'Work Sans', sans-serif;
+  //https://vue-feather-icons.egoist.sh/
 </style>

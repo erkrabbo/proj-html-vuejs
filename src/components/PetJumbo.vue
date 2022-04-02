@@ -64,7 +64,6 @@ export default {
     li{
       padding: 1em;
       display: flex;
-      cursor: pointer;
       svg{
         height: 1em;
       }
