@@ -47,8 +47,28 @@ const state = Vue.observable({
         'ciao'
       ]
     }
+  ],
+  foodCat: [
+    {
+      name: 'Kibble',
+      dscription: 'Dry dog food',
+      img: 'food-transparent-18.png'
+    },
+    {
+      name: 'Kibble',
+      dscription: 'Dry dog food',
+      img: 'food-transparent-18.png'
+    },
+    {
+      name: 'Kibble',
+      dscription: 'Dry dog food',
+      img: 'food-transparent-18.png'
+    }
   ]
 })
+export const shopCategories = [...state.shopCategories]
+export const foodCategories = [...state.foodCat]
+
 export default {
   shopCategories: [...state.shopCategories]
 }

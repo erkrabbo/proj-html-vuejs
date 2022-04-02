@@ -26,6 +26,7 @@ export default {
 <style scoped lang="scss">
   nav{
     position: sticky;
+    z-index: 20;
     top: 0;
     height: 3.5rem;
     background-color: var(--HEADER_BG);

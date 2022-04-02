@@ -14,6 +14,9 @@ export default {
 
 <style scoped lang="scss">
   .jumbo-offer-sticky{
+    position: sticky;
+    z-index: 20;
+    top: 3.5rem;
     color: var(--TEXT_WHITE);
     background-color: var(--JUMBOTRON_BG_COLOR);
     background-image: var(--JUMBOTRON_BG_IMAGE);
