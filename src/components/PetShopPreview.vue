@@ -35,6 +35,9 @@
       <pet-banner/>
       <pet-banner/>
     </section>
+    <b-container>
+      <pet-new-products-arrival/>
+    </b-container>
   </section>
 </template>
 
@@ -47,6 +50,7 @@ import PetUsersTestimonials from './PetUsersTestimonials.vue'
 import PetNewsletter from './PetNewsletter.vue'
 import PetBlog from './PetBlog.vue'
 import PetBanner from './PetBanner.vue'
+import PetNewProductsArrival from './PetNewProductsArrival.vue'
 
 export default {
   name: 'PetShopPreview',
@@ -57,7 +61,8 @@ export default {
     PetUsersTestimonials,
     PetNewsletter,
     PetBlog,
-    PetBanner
+    PetBanner,
+    PetNewProductsArrival
   },
   computed: {
     shopCategories () {
