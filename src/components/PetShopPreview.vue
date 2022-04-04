@@ -31,6 +31,10 @@
       <pet-newsletter />
       <pet-blog />
     </b-container>
+    <section class="d-flex">
+      <pet-banner/>
+      <pet-banner/>
+    </section>
   </section>
 </template>
 
@@ -42,6 +46,7 @@ import PetBestSellers from './PetBestSellers.vue'
 import PetUsersTestimonials from './PetUsersTestimonials.vue'
 import PetNewsletter from './PetNewsletter.vue'
 import PetBlog from './PetBlog.vue'
+import PetBanner from './PetBanner.vue'
 
 export default {
   name: 'PetShopPreview',
@@ -51,7 +56,8 @@ export default {
     PetBestSellers,
     PetUsersTestimonials,
     PetNewsletter,
-    PetBlog
+    PetBlog,
+    PetBanner
   },
   computed: {
     shopCategories () {
@@ -74,7 +80,7 @@ export default {
 
 <style scoped lang="scss">
   .shop-preview{
-    padding: 4rem 2rem;
+    // padding: 4rem 2rem;
     text-align: center;
     .intro{
       max-width: 50%;
