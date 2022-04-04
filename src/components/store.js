@@ -67,10 +67,38 @@ const state = Vue.observable({
       type: 'Frozen',
       img: 'food-transparent-16.png'
     }
+  ],
+  bestSellers: [
+    {
+      img: 'product-21.jpg',
+      name: 'Transport cage',
+      price: '$25.00',
+      sale: false
+    },
+    {
+      img: 'product-20.jpg',
+      name: 'Dog leash',
+      price: '$25.00',
+      sale: false
+    },
+    {
+      img: 'product-16.jpg',
+      name: 'Animal Transport cage',
+      price: '$35.00',
+      sale: true,
+      discountPrice: '$25.00'
+    },
+    {
+      img: 'product-11.jpg',
+      name: 'Colorful Cat Leash',
+      price: '$12.00',
+      sale: false
+    }
   ]
 })
 export const shopCategories = [...state.shopCategories]
 export const foodCategories = [...state.foodCat]
+export const bestSellers = [...state.bestSellers]
 
 export default {
   shopCategories: [...state.shopCategories]

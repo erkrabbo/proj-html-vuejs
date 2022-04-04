@@ -29,7 +29,7 @@
           <p>New arrivals weekly</p>
           <pet-button data-content="Learn more about us" data-class="button-white"/>
       </div> -->
-      <pet-best-sellers />
+      <pet-best-sellers :data-best-sellers="bestSellers" />
       <pet-users-testimonials class="pb-5" />
       <pet-newsletter />
       <pet-blog />
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import { shopCategories, foodCategories } from './store'
+import { shopCategories, foodCategories, bestSellers } from './store'
 // import PetButton from './PetButton.vue'
 import PetFoodCatCard from './PetFoodCatCard.vue'
 import PetBestSellers from './PetBestSellers.vue'
@@ -73,6 +73,9 @@ export default {
     },
     foodCategories () {
       return foodCategories
+    },
+    bestSellers () {
+      return bestSellers
     }
   },
   mounted () {
