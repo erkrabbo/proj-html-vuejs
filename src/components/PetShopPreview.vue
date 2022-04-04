@@ -29,6 +29,7 @@
       <pet-best-sellers />
       <pet-users-testimonials class="pb-5" />
       <pet-newsletter />
+      <pet-blog />
     </b-container>
   </section>
 </template>
@@ -40,6 +41,7 @@ import PetFoodCatCard from './PetFoodCatCard.vue'
 import PetBestSellers from './PetBestSellers.vue'
 import PetUsersTestimonials from './PetUsersTestimonials.vue'
 import PetNewsletter from './PetNewsletter.vue'
+import PetBlog from './PetBlog.vue'
 
 export default {
   name: 'PetShopPreview',
@@ -48,7 +50,8 @@ export default {
     PetFoodCatCard,
     PetBestSellers,
     PetUsersTestimonials,
-    PetNewsletter
+    PetNewsletter,
+    PetBlog
   },
   computed: {
     shopCategories () {
