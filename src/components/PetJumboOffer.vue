@@ -1,8 +1,15 @@
 <template>
   <section class="jumbo-offer-sticky">
-    <img src="../assets/img/food-transparent-5-200x112.png" alt="">
-    <span>Get $25 OFF your first purchase of our homemade pet food!</span>
-    <a href="#">Visit the shop!</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-auto order-1 order-sm-0 text-center">
+          <img class="img-fluid" src="../assets/img/food-transparent-5-200x112.png" alt="">
+        </div>
+        <div class="col d-flex align-items-center">
+          <span class="m-0">Get $25 OFF your first purchase of our homemade pet food! <a class="ms-4" href="#">Visit the shop!</a></span>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 

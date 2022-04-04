@@ -2,8 +2,8 @@
   <section class="jumbotron">
       <ul>
         <li><MapIcon /><p><span class="bold">&nbsp;International&nbsp;</span>shipping services</p></li>
-        <li><ClockIcon /> <p>See our <span class="bold">&nbsp;store hours&nbsp;</span> and services</p></li>
-        <li><CheckIcon /><p>We price match to give you the <span class="bold">&nbsp;best deals</span></p></li>
+        <li class="d-none d-lg-flex"><ClockIcon /> <p>See our <span class="bold">&nbsp;store hours&nbsp;</span> and services</p></li>
+        <li class="d-none d-lg-flex"><CheckIcon /><p>We price match to give you the <span class="bold">&nbsp;best deals</span></p></li>
       </ul>
         <div class="hero">
           <span>FIND THE BEST ANIMAL SUPPLIES</span>
