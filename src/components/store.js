@@ -13,7 +13,7 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'product-9.jpg',
+      img: 'product-3.jpg',
       cat: 'Food',
       items: [
         'ciao',
@@ -26,7 +26,7 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'product-9.jpg',
+      img: 'product-2.jpg',
       cat: 'Toys',
       items: [
         'ciao',
@@ -36,7 +36,7 @@ const state = Vue.observable({
       ]
     },
     {
-      img: 'product-9.jpg',
+      img: 'product-4.jpg',
       cat: 'Transport',
       items: [
         'ciao',
@@ -51,18 +51,21 @@ const state = Vue.observable({
   foodCat: [
     {
       name: 'Kibble',
-      dscription: 'Dry dog food',
+      dscription: 'Dry',
+      type: 'Dry',
       img: 'food-transparent-18.png'
     },
     {
-      name: 'Kibble',
-      dscription: 'Dry dog food',
-      img: 'food-transparent-18.png'
+      name: 'Moist',
+      dscription: 'Canned',
+      type: 'Moist',
+      img: 'food-transparent-17.png'
     },
     {
-      name: 'Kibble',
-      dscription: 'Dry dog food',
-      img: 'food-transparent-18.png'
+      name: 'Frozen',
+      dscription: 'Freeze',
+      type: 'Frozen',
+      img: 'food-transparent-16.png'
     }
   ]
 })

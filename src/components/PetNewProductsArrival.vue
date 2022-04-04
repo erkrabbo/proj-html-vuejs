@@ -5,42 +5,42 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card border-0">
             <img :src="require('../assets/img/product-8.jpg')" alt="" class="card-img-top">
             <p>Colored pet bed</p>
             <span>$25.00</span>
@@ -57,6 +57,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  section{
+    padding: 8rem 0;
+  }
 </style>

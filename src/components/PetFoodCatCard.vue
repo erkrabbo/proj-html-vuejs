@@ -4,10 +4,10 @@
     <!-- <img class="img-fluid dim" :src="require('../assets/img/' + dataFoodCat.img)" alt=""> -->
     <div class="card-img-overlay">
       <h2>{{ dataFoodCat.name }}</h2>
-      <span>{{ dataFoodCat.description }}</span>
+      <span>{{ dataFoodCat.dscription }} dog food</span>
     </div>
     <img class="img-fluid p-4" :src="require('../assets/img/' + dataFoodCat.img)" alt="">
-    <pet-button data-class="button-white" data-content="shop food" />
+    <pet-button data-class="button-white" :data-content="dataFoodCat.type +' shop food'" />
   </b-card>
 </template>
 
@@ -33,6 +33,11 @@ export default {
     background-position: top;
     .card-img-overlay{
       padding-top: 5rem;
+    }
+    transition: transform .4s ease;
+    &:hover{
+      transform: scale(1.030);
+      filter: brightness(1.2);
     }
     // background-size: contain !important;
     // height: 550px;

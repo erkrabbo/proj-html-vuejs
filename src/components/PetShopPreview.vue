@@ -16,7 +16,7 @@
           </b-card>
         </b-col>
       </b-row>
-       <b-row cols="3">
+       <b-row class="g-3" cols="3">
         <b-col v-for="(foodCat, index) in foodCategories" :key="index">
           <pet-food-cat-card :data-food-cat="foodCat" />
         </b-col>
