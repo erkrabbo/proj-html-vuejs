@@ -28,7 +28,10 @@ export default {
     position: sticky;
     z-index: 20;
     top: 0;
-    height: 3.5rem;
+    // height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--HEADER_BG);
     a {
       text-decoration: none;
@@ -47,8 +50,11 @@ export default {
     }
   }
   ul{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     li{
       padding: 1em;
       display: flex;
