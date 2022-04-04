@@ -24,22 +24,28 @@
       <div class="hero">
           <span>FIND THE BEST ANIMAL SUPPLIES</span>
           <p>New arrivals weekly</p>
-          <pet-white-button/>
+          <pet-button data-content="Learn more about us" data-class="button-white"/>
       </div>
+      <pet-best-sellers />
+      <pet-users-testimonials />
     </b-container>
   </section>
 </template>
 
 <script>
 import { shopCategories, foodCategories } from './store'
-import PetWhiteButton from './PetWhiteButton.vue'
+import PetButton from './PetButton.vue'
 import PetFoodCatCard from './PetFoodCatCard.vue'
+import PetBestSellers from './PetBestSellers.vue'
+import PetUsersTestimonials from './PetUsersTestimonials.vue'
 
 export default {
   name: 'PetShopPreview',
   components: {
-    PetWhiteButton,
-    PetFoodCatCard
+    PetButton,
+    PetFoodCatCard,
+    PetBestSellers,
+    PetUsersTestimonials
   },
   computed: {
     shopCategories () {

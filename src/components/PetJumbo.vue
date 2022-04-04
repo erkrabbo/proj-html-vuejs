@@ -8,7 +8,7 @@
         <div class="hero">
           <span>FIND THE BEST ANIMAL SUPPLIES</span>
           <p>We know animals are a part of your family, let us help take care of them.</p>
-          <pet-white-button/>
+          <pet-button data-class="button-white" data-content="Learn more about us"/>
         </div>
         <!-- <p>We price match to give you the <span class="bold">&nbsp;best deals</span></p> -->
       <!-- <img src="../assets/img/banner-5-2x-scaled.jpg" alt=""> -->
@@ -17,14 +17,14 @@
 
 <script>
 import { MapIcon, ClockIcon, CheckIcon } from 'vue-feather-icons'
-import PetWhiteButton from './PetWhiteButton.vue'
+import PetButton from './PetButton.vue'
 export default {
   name: 'PetJumbo',
   components: {
     MapIcon,
     ClockIcon,
     CheckIcon,
-    PetWhiteButton
+    PetButton
   }
 }
 </script>
