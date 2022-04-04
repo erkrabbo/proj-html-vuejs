@@ -27,7 +27,8 @@
           <pet-button data-content="Learn more about us" data-class="button-white"/>
       </div>
       <pet-best-sellers />
-      <pet-users-testimonials />
+      <pet-users-testimonials class="pb-5" />
+      <pet-newsletter />
     </b-container>
   </section>
 </template>
@@ -38,6 +39,7 @@ import PetButton from './PetButton.vue'
 import PetFoodCatCard from './PetFoodCatCard.vue'
 import PetBestSellers from './PetBestSellers.vue'
 import PetUsersTestimonials from './PetUsersTestimonials.vue'
+import PetNewsletter from './PetNewsletter.vue'
 
 export default {
   name: 'PetShopPreview',
@@ -45,7 +47,8 @@ export default {
     PetButton,
     PetFoodCatCard,
     PetBestSellers,
-    PetUsersTestimonials
+    PetUsersTestimonials,
+    PetNewsletter
   },
   computed: {
     shopCategories () {

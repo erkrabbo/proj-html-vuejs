@@ -5,7 +5,9 @@
       <div class="row row-cols-1 row-cols-lg-3">
         <div class="col">
           <div class="card">
-            <img :src="require('../assets/img/avatar-3.jpg')" alt="" class="card-img-top rounded-circle">
+            <div class="card-body">
+              <img width="100" :src="require('../assets/img/avatar-3.jpg')" alt="" class="rounded-circle">
+            </div>
             <div class="card-text">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ut, adipisci veniam provident possimus molestias.</p>
               <span>Lisa smith, Theme fusion</span>
@@ -14,7 +16,9 @@
         </div>
         <div class="col">
           <div class="card">
-            <img :src="require('../assets/img/avatar-3.jpg')" alt="" class="card-img-top rounded-circle">
+            <div class="card-body">
+              <img width="100" :src="require('../assets/img/avatar-3.jpg')" alt="" class="rounded-circle">
+            </div>
             <div class="card-text">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ut, adipisci veniam provident possimus molestias.</p>
               <span>Lisa smith, Theme fusion</span>
@@ -23,7 +27,9 @@
         </div>
         <div class="col">
           <div class="card">
-            <img :src="require('../assets/img/avatar-3.jpg')" alt="" class="card-img-top rounded-circle">
+            <div class="card-body">
+              <img width="100" :src="require('../assets/img/avatar-3.jpg')" alt="" class="rounded-circle">
+            </div>
             <div class="card-text">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ut, adipisci veniam provident possimus molestias.</p>
               <span>Lisa smith, Theme fusion</span>
@@ -42,6 +48,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  section{
+    background-color: green;
+  }
 </style>
