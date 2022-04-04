@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Get the best tips&tricks</h2>
       <span>Recent article</span>
-      <div class="row row-cols-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col">
           <img :src="require('../assets/img/blog-1.jpg')" alt="" class="card-img-top">
           <p>How to 'loose leash walk' your dog</p>

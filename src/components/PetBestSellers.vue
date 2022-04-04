@@ -1,18 +1,16 @@
 <template>
-  <section>
+  <section class="py-3">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-auto">
-          <h3>All time best-sellers</h3>
-          <span>Items everyone loves</span>
+          <p class="green text-start m-0">All time best-sellers</p>
+          <span class="fs-1">Items everyone loves</span>
         </div>
         <div class="col-auto">
-          <button>
-            ciao
-          </button>
+          <pet-button data-class="button-white" data-content="View all products" />
         </div>
       </div>
-      <div class="row row-cols-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col">
           <div class="card">
             <img :src="require('../assets/img/product-21.jpg')" alt="" class="card-img-top">
@@ -55,11 +53,15 @@
 </template>
 
 <script>
+import PetButton from './PetButton.vue'
 export default {
+  components: { PetButton },
   name: 'PetBestSellers'
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  .green{
+    color: green;
+  }
 </style>

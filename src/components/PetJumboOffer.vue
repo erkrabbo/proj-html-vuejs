@@ -1,8 +1,8 @@
 <template>
   <section class="jumbo-offer-sticky">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-auto order-1 order-sm-0 text-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-4 order-1 order-sm-0 text-center">
           <img class="img-fluid" src="../assets/img/food-transparent-5-200x112.png" alt="">
         </div>
         <div class="col d-flex align-items-center">
