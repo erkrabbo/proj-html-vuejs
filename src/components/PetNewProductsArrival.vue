@@ -6,7 +6,12 @@
       <div class="row row-cols-1 row-cols-md-3">
         <div v-for="(product, index) in newProducts" :key="index" class="col">
           <div class="card border-0">
-            <img :src="require('../assets/img/' + product.img)" alt="" class="card-img-top">
+            <div class="to-hover position-relative">
+              <img :src="require('../assets/img/' + product.img)" alt="" class="card-img-top">
+              <div class="hoverlay d-flex justify-content-center align-items-center">
+                <span>ADD TO CART / QUICK VIEW</span>
+              </div>
+            </div>
             <p>{{ product.name }}</p>
             <div v-if="product.sale">
               <p class="sale-badge">Sale!</p>
@@ -54,5 +59,22 @@ export default {
     color: white;
     background-color: darkgreen;
     // padding: .5em;
+  }
+  .to-hover:hover .hoverlay{
+    opacity: 1;
+  }
+  .hoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: .5em;
+    font-size: .8rem;
+
+    color: white;
+    opacity: 0;
+    background-color: #6e3b1566;
+    transition: opacity .5s ease;
   }
 </style>

@@ -38,6 +38,12 @@ export default {
     min-height: 500px;
     display: flex;
   }
+  input{
+    border-radius: 2em;
+    height: 3em;
+    padding: 1em;
+    margin-right: 1.5em
+  }
 
   // .fade-enter-active,
   // .fade-leave-active {

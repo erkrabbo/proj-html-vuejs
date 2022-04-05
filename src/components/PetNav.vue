@@ -30,7 +30,7 @@ export default {
     top: 0;
     // height: 3.5rem;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     background-color: var(--HEADER_BG);
     a {
@@ -39,9 +39,10 @@ export default {
       font-weight: var(--NAV_LINK_WEIGHT);
       font-size: var(--NAV_LINK_SIZE);
       display: flex;
+      align-items: center;
       svg{
         height: 1em;
-        align-self: end;
+        transform: translateY(1.8px);
       }
 
       &.router-link-exact-active {
