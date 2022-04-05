@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container h-100">
+    <div class="container h-100" data-aos="fade-right">
       <div class="row row-cols-4 h-100 flex-wrap h-100 py-2 justify-content-center">
         <div class="col-10 col-md-6 col-lg-3 d-flex align-items-center justify-content-center"><img src="../assets/img/dark-pet-logo.png" class="logo" alt=""></div>
         <div class="col-auto col-md-6 col-lg-4 d-flex align-items-center">

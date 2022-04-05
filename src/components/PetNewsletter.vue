@@ -1,16 +1,14 @@
 <template>
-  <scroll-loader data-aos="fade-up">
-    <section class="text-start box">
-      <div class="m-auto ms-0">
-        <h2>Join our newsletter</h2>
-        <p class="w-50">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
-        <form @submit.prevent>
-          <input type="mail" placeholder="Insert your email...*">
-          <pet-button data-class="button-hover-green" data-content="subscribe" />
-        </form>
-      </div>
-    </section>
-  </scroll-loader>
+  <section class="text-start box" data-aos="fade-up">
+    <div class="m-auto ms-0">
+      <h2>Join our newsletter</h2>
+      <p class="w-50">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
+      <form @submit.prevent>
+        <input type="mail" placeholder="Insert your email...*">
+        <pet-button data-class="button-hover-green" data-content="subscribe" />
+      </form>
+    </div>
+  </section>
 </template>
 
 <script>

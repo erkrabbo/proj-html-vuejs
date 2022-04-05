@@ -39,8 +39,6 @@ import PetFoodCatCard from '../components/PetFoodCatCard.vue'
 import PetBanner from '../components/PetBanner.vue'
 import PetBestSellers from '../components/PetBestSellers.vue'
 import PetUsersTestimonials from '../components/PetUsersTestimonials.vue'
-
-import PetBlog from '../components/PetBlog.vue'
 import PetNewProductsArrival from '../components/PetNewProductsArrival.vue'
 import PetDeliveryBanner from '../components/PetDeliveryBanner.vue'
 
@@ -54,7 +52,7 @@ export default {
     PetBestSellers,
     PetUsersTestimonials,
     PetNewsletter: () => import('../components/PetNewsletter.vue'),
-    PetBlog,
+    PetBlog: () => import('../components/PetBlog.vue'),
     PetNewProductsArrival,
     PetDeliveryBanner
   },

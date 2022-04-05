@@ -1,17 +1,17 @@
 <template>
   <section class="jumbotron">
-      <ul>
-        <li><MapIcon /><p><span class="bold">&nbsp;International&nbsp;</span>shipping services</p></li>
-        <li class="d-none d-lg-flex"><ClockIcon /> <p>See our <span class="bold">&nbsp;store hours&nbsp;</span> and services</p></li>
-        <li class="d-none d-lg-flex"><CheckIcon /><p>We price match to give you the <span class="bold">&nbsp;best deals</span></p></li>
-      </ul>
-        <div class="hero">
-          <span>FIND THE BEST ANIMAL SUPPLIES</span>
-          <p>We know animals are a part of your family, let us help take care of them.</p>
-          <pet-button data-class="button-white" data-content="Learn more about us"/>
-        </div>
-        <!-- <p>We price match to give you the <span class="bold">&nbsp;best deals</span></p> -->
-      <!-- <img src="../assets/img/banner-5-2x-scaled.jpg" alt=""> -->
+    <ul>
+      <li data-aos="fade-right"><MapIcon /><p><span class="bold">&nbsp;International&nbsp;</span>shipping services</p></li>
+      <li data-aos="fade-right" class="d-none d-lg-flex"><ClockIcon /> <p>See our <span class="bold">&nbsp;store hours&nbsp;</span> and services</p></li>
+      <li data-aos="fade-right" class="d-none d-lg-flex"><CheckIcon /><p>We price match to give you the <span class="bold">&nbsp;best deals</span></p></li>
+    </ul>
+    <div class="hero">
+      <span data-aos="fade-right">FIND THE BEST ANIMAL SUPPLIES</span>
+      <p data-aos="fade-right">We know animals are a part of your family, let us help take care of them.</p>
+      <pet-button data-aos="fade-right" data-class="button-white" data-content="Learn more about us"/>
+    </div>
+      <!-- <p>We price match to give you the <span class="bold">&nbsp;best deals</span></p> -->
+    <!-- <img src="../assets/img/banner-5-2x-scaled.jpg" alt=""> -->
   </section>
 </template>
 

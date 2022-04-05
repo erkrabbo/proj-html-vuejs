@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section data-aos="fade-up">
     <div class="container text-center">
       <h2 class="text-center">Get the best tips&tricks</h2>
       <p class="text-center mb-5">Recent article</p>
