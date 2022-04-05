@@ -6,9 +6,7 @@
         <p class="w-50">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
         <form @submit.prevent>
           <input type="mail" placeholder="Insert your email...*">
-          <button>
-            subscribe
-          </button>
+          <pet-button data-class="button-hover-green" data-content="subscribe" />
         </form>
       </div>
     </section>
@@ -16,8 +14,13 @@
 </template>
 
 <script>
+import PetButton from './PetButton.vue'
+
 export default {
-  name: 'PetNewsletter'
+  name: 'PetNewsletter',
+  components: {
+    PetButton
+  }
 }
 </script>
 

@@ -7,7 +7,7 @@
       <span>{{ dataFoodCat.dscription }} dog food</span>
     </div>
     <img class="img-fluid p-4" :src="require('../assets/img/' + dataFoodCat.img)" alt="">
-    <pet-button data-class="button-white" :data-content="dataFoodCat.type +' shop food'" />
+    <pet-button data-class="button-flat-green" :data-content="dataFoodCat.type +' shop food'" />
   </b-card>
 </template>
 

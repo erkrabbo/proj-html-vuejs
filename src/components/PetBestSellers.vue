@@ -7,7 +7,7 @@
           <span class="fs-1">Items everyone loves</span>
         </div>
         <div class="col-auto">
-          <pet-button data-class="button-white" data-content="View all products" />
+          <pet-button data-class="button-hover-green" data-content="View all products" />
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">

@@ -38,9 +38,7 @@
           <form @submit.prevent class="d-flex flex-column h-100 justify-content-center">
             <label for="email" class="fs-4 mb-4">Subscribe to our newsletter</label>
             <input name="email" type="email" class="footer-input mb-4" placeholder="Insert your email...*">
-            <button>
-              Subscribe
-            </button>
+            <pet-button data-class="button-hover-green" data-content="Subscribe" />
           </form>
         </div>
       </div>
@@ -63,8 +61,13 @@
 </template>
 
 <script>
+import PetButton from './PetButton.vue'
+
 export default {
-  name: 'PetFooter'
+  name: 'PetFooter',
+  components: {
+    PetButton
+  }
 }
 </script>
 

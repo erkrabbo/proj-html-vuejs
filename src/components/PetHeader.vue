@@ -47,6 +47,7 @@ export default {
   align-items: center;
   background-color: var(--LIGHT_BG);
   overflow: hidden;
+  color: black;
     input{
       border: 0;
       outline: 0;
@@ -58,7 +59,7 @@ export default {
     }
     svg{
       margin: 0 .5em;
-      width: 1em
+      width: 1.5em
     }
   }
   header{

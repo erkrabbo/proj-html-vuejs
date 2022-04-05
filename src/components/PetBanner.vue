@@ -3,20 +3,22 @@
     <div class="m-auto">
       <span>{{ banners[dataBanner].name }}</span>
       <h2>{{ banners[dataBanner].title }}</h2>
-      <button>
-        {{ banners[dataBanner].button }}
-      </button>
+      <pet-button data-class="button-flat-white" :data-content="banners[dataBanner].button" />
     </div>
   </div>
 </template>
 
 <script>
 import { banners } from './store'
+import PetButton from './PetButton.vue'
 
 export default {
   name: 'PetBanner.vue',
   props: {
     dataBanner: Number
+  },
+  components: {
+    PetButton
   },
   computed: {
     banners () {
@@ -38,7 +40,13 @@ export default {
     &.banner-0{
      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/img/banner-3-2x-scaled.jpg');
      background-position: left;
-    background-size: cover;
+     background-size: cover;
+     button:hover{
+      color: white;
+      background:
+      linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+      #77ab82;
+     }
     }
     &.banner-1{
      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/img/banner-8-2x.jpg');
