@@ -39,7 +39,7 @@ import PetFoodCatCard from '../components/PetFoodCatCard.vue'
 import PetBanner from '../components/PetBanner.vue'
 import PetBestSellers from '../components/PetBestSellers.vue'
 import PetUsersTestimonials from '../components/PetUsersTestimonials.vue'
-import PetNewsletter from '../components/PetNewsletter.vue'
+
 import PetBlog from '../components/PetBlog.vue'
 import PetNewProductsArrival from '../components/PetNewProductsArrival.vue'
 import PetDeliveryBanner from '../components/PetDeliveryBanner.vue'
@@ -53,7 +53,7 @@ export default {
     PetBanner,
     PetBestSellers,
     PetUsersTestimonials,
-    PetNewsletter,
+    PetNewsletter: () => import('../components/PetNewsletter.vue'),
     PetBlog,
     PetNewProductsArrival,
     PetDeliveryBanner
