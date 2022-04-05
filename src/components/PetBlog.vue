@@ -32,6 +32,6 @@ export default {
 
 <style scoped lang="scss">
   section{
-    padding-top: 5rem;
+    padding: 7rem 0;
   }
 </style>

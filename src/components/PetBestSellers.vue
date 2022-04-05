@@ -1,5 +1,5 @@
 <template>
-  <section class="py-3">
+  <section class="custom-padding">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-auto">
@@ -76,5 +76,8 @@ export default {
   .discount-price{
     text-decoration: line-through;
     margin-right: 1em;
+  }
+  .custom-padding{
+    padding: 6rem 0;
   }
 </style>

@@ -36,7 +36,7 @@ export default {
 
 <style scoped lang="scss">
   section{
-    padding: 5rem 0;
+    padding: 7rem 0;
   }
   .deprecated{
     text-decoration: line-through;

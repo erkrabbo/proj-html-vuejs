@@ -62,6 +62,7 @@ export default {
 <style scoped lang="scss">
   .shop-preview{
     // padding: 4rem 2rem;
+    padding: 8rem 0;
     text-align: center;
     .intro{
       max-width: 50%;

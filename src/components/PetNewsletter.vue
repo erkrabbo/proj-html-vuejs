@@ -27,12 +27,12 @@ export default {
     width: 90%;
     margin: 0 auto;
     margin-top: -4rem;
-    padding: 2rem;
+    padding: 7rem;
     background: url('../assets/img/food-transparent-18.png'), linear-gradient(white, rgba(0,0,0,.3)), white;
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
   }
 

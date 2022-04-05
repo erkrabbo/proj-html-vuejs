@@ -3,13 +3,15 @@
     <pet-jumbo />
     <pet-jumbo-offer />
     <pet-shop-preview />
-    <b-container>
-      <b-row class="g-3" cols="2" cols-md="3">
-          <b-col v-for="(foodCat, index) in foodCategories" :key="index">
-            <pet-food-cat-card :data-food-cat="foodCat" />
-          </b-col>
-      </b-row>
-    </b-container>
+    <section class="food-card-section">
+      <b-container>
+        <b-row class="g-3" cols="2" cols-md="3">
+            <b-col v-for="(foodCat, index) in foodCategories" :key="index">
+              <pet-food-cat-card :data-food-cat="foodCat" />
+            </b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section class="py-3">
         <pet-banner class="banner-0 big" data-banner="0"/>
     </section>
@@ -21,6 +23,7 @@
       <pet-banner class="banner-1 small" data-banner="1"/>
       <pet-banner class="banner-2 small" data-banner="2"/>
     </section>
+    <pet-delivery-banner />
     <b-container>
       <pet-new-products-arrival/>
     </b-container>
@@ -39,6 +42,7 @@ import PetUsersTestimonials from '../components/PetUsersTestimonials.vue'
 import PetNewsletter from '../components/PetNewsletter.vue'
 import PetBlog from '../components/PetBlog.vue'
 import PetNewProductsArrival from '../components/PetNewProductsArrival.vue'
+import PetDeliveryBanner from '../components/PetDeliveryBanner.vue'
 
 export default {
   components: {
@@ -51,7 +55,8 @@ export default {
     PetUsersTestimonials,
     PetNewsletter,
     PetBlog,
-    PetNewProductsArrival
+    PetNewProductsArrival,
+    PetDeliveryBanner
   },
   computed: {
     foodCategories () {
@@ -63,3 +68,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .food-card-section{
+    padding-bottom: 7rem;;
+  }
+</style>

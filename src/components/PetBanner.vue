@@ -55,7 +55,7 @@ export default {
     min-height: 500px;
   }
   .small{
-    min-height: 300px;
+    min-height: 400px;
     transition: transform .3s ease;
     &:hover{
       transform: scale(1.05);
