@@ -41,7 +41,7 @@ export default {
   section{
     background: var(--JUMBOTRON_BG_IMAGE), var(--JUMBOTRON_BG_COLOR);
     color: white;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   .icon{
     height: 80px;
