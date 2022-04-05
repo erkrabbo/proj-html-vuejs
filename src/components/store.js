@@ -172,6 +172,23 @@ const state = Vue.observable({
       price: '$16.00',
       sale: false
     }
+  ],
+  banners: [
+    {
+      name: 'FIND THE BEST ANIMAL SUPPLIES',
+      title: 'New arrivals weekly',
+      button: 'Learn more about us'
+    },
+    {
+      name: 'FIND THE BEST ANIMAL SUPPLIES',
+      title: 'Popular accessories',
+      button: 'View all toys accessories'
+    },
+    {
+      name: 'FIND THE BEST FOOD',
+      title: 'New food arrival',
+      button: 'View all food products'
+    }
   ]
 })
 export const shopCategories = [...state.shopCategories]
@@ -180,6 +197,7 @@ export const bestSellers = [...state.bestSellers]
 export const usersTestimonials = [...state.usersTestimonials]
 export const blogArticles = [...state.blogArticles]
 export const newProducts = [...state.newProducts]
+export const banners = [...state.banners]
 
 export default {
   shopCategories: [...state.shopCategories]

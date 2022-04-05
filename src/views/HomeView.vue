@@ -11,15 +11,15 @@
       </b-row>
     </b-container>
     <section class="py-3">
-        <pet-banner class="big"/>
+        <pet-banner class="banner-0 big" data-banner="0"/>
     </section>
     <pet-best-sellers :data-best-sellers="bestSellers" />
     <pet-users-testimonials class="pb-5" />
     <pet-newsletter />
     <pet-blog />
     <section class="d-flex">
-      <pet-banner class="small"/>
-      <pet-banner class="small"/>
+      <pet-banner class="banner-1 small" data-banner="1"/>
+      <pet-banner class="banner-2 small" data-banner="2"/>
     </section>
     <b-container>
       <pet-new-products-arrival/>
