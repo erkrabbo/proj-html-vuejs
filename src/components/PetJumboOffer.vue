@@ -22,8 +22,8 @@ export default {
 <style scoped lang="scss">
   .jumbo-offer-sticky{
     position: sticky;
-    z-index: 20;
-    top: 3.5rem;
+    z-index: 19;
+    top: 3rem;
     color: var(--TEXT_WHITE);
     background-color: var(--JUMBOTRON_BG_COLOR);
     background-image: var(--JUMBOTRON_BG_IMAGE);
@@ -40,6 +40,11 @@ export default {
     a {
       color: var(--GREEN_CONTRAST_TEXT);
       font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 582.40px) {
+    .jumbo-offer-sticky{
+      top: 6.5rem;
     }
   }
 </style>

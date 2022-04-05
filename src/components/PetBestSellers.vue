@@ -12,7 +12,7 @@
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div v-for="(item, index) in dataBestSellers" :key="index" class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0 text-center">
             <img :src="require('../assets/img/' + item.img)" :alt="item.name" class="card-img-top">
             <div class="card-body">
               <div class="card-text">

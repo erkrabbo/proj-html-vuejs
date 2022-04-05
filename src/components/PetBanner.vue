@@ -33,5 +33,9 @@ export default {
   }
   .small{
     min-height: 300px;
+    transition: transform .3s ease;
+    &:hover{
+      transform: scale(1.05);
+    }
   }
 </style>

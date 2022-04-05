@@ -27,6 +27,7 @@ export default {
 
 <style scoped lang="scss">
   .pet-food-cat-card{
+    text-align: center;
     color: white;
     background-color: var(--JUMBOTRON_BG_COLOR);
     background-size: cover;
@@ -41,8 +42,5 @@ export default {
     }
     // background-size: contain !important;
     // height: 550px;
-  }
-  .dim{
-    opacity: 0;
   }
 </style>

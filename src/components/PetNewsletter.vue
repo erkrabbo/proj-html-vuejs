@@ -1,16 +1,18 @@
 <template>
-  <section class="text-start">
-    <div class="m-auto ms-0">
-      <h2>Join our newsletter</h2>
-      <p class="w-50">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
-      <form @submit.prevent>
-        <input type="mail" placeholder="Insert your email...*">
-        <button>
-          subscribe
-        </button>
-      </form>
-    </div>
-  </section>
+  <transition name="fade">
+    <section class="text-start">
+      <div class="m-auto ms-0">
+        <h2>Join our newsletter</h2>
+        <p class="w-50">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
+        <form @submit.prevent>
+          <input type="mail" placeholder="Insert your email...*">
+          <button>
+            subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+  </transition>
 </template>
 
 <script>
@@ -21,9 +23,10 @@ export default {
 
 <style scoped lang="scss">
   section{
+    position: relative;
     width: 90%;
     margin: 0 auto;
-    margin-top: -2.5rem;
+    margin-top: -4rem;
     padding: 2rem;
     background: url('../assets/img/food-transparent-18.png'), linear-gradient(white, rgba(0,0,0,.3)), white;
     background-position: right;
@@ -32,4 +35,14 @@ export default {
     min-height: 400px;
     display: flex;
   }
+
+  // .fade-enter-active,
+  // .fade-leave-active {
+  //   transition: opacity 0.5s ease;
+  // }
+
+  // .fade-enter-from,
+  // .fade-leave-to {
+  //   opacity: 0;
+  // }
 </style>

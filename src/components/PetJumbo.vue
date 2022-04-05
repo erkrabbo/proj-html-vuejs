@@ -63,6 +63,7 @@ export default {
     justify-content: space-around;
     list-style: none;
     padding: .5em 0;
+    margin: 0;
     li{
       padding: 1em;
       // vertical-align: baseline;

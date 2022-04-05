@@ -16,71 +16,41 @@
           </b-card>
         </b-col>
       </b-row>
-       <b-row class="g-3" cols="3">
-        <b-col v-for="(foodCat, index) in foodCategories" :key="index">
-          <pet-food-cat-card :data-food-cat="foodCat" />
-        </b-col>
-      </b-row>
-      <section class="py-3">
-        <pet-banner class="big"/>
-      </section>
-      <!-- <div class="hero">
-          <span>FIND THE BEST ANIMAL SUPPLIES</span>
-          <p>New arrivals weekly</p>
-          <pet-button data-content="Learn more about us" data-class="button-white"/>
-      </div> -->
-      <pet-best-sellers :data-best-sellers="bestSellers" />
-      <pet-users-testimonials class="pb-5" />
-      <pet-newsletter />
-      <pet-blog />
-    </b-container>
-    <section class="d-flex">
-      <pet-banner class="small"/>
-      <pet-banner class="small"/>
-    </section>
-    <b-container>
-      <pet-new-products-arrival/>
     </b-container>
   </section>
 </template>
 
 <script>
-import { shopCategories, foodCategories, bestSellers } from './store'
+import { shopCategories } from './store'
 // import PetButton from './PetButton.vue'
-import PetFoodCatCard from './PetFoodCatCard.vue'
-import PetBestSellers from './PetBestSellers.vue'
-import PetUsersTestimonials from './PetUsersTestimonials.vue'
-import PetNewsletter from './PetNewsletter.vue'
-import PetBlog from './PetBlog.vue'
-import PetBanner from './PetBanner.vue'
-import PetNewProductsArrival from './PetNewProductsArrival.vue'
+// import PetFoodCatCard from './PetFoodCatCard.vue'
+// import PetBestSellers from './PetBestSellers.vue'
+// import PetUsersTestimonials from './PetUsersTestimonials.vue'
+// import PetNewsletter from './PetNewsletter.vue'
+// import PetBlog from './PetBlog.vue'
+// import PetBanner from './PetBanner.vue'
+// import PetNewProductsArrival from './PetNewProductsArrival.vue'
 
 export default {
   name: 'PetShopPreview',
-  components: {
-    // PetButton,
-    PetFoodCatCard,
-    PetBestSellers,
-    PetUsersTestimonials,
-    PetNewsletter,
-    PetBlog,
-    PetBanner,
-    PetNewProductsArrival
-  },
+  // components: {
+  // PetButton,
+  // PetFoodCatCard,
+  // PetBestSellers,
+  // PetUsersTestimonials,
+  // PetNewsletter,
+  // PetBlog,
+  // PetBanner,
+  // PetNewProductsArrival
+  // },
   computed: {
     shopCategories () {
       return shopCategories
-    },
-    foodCategories () {
-      return foodCategories
-    },
-    bestSellers () {
-      return bestSellers
     }
-  },
-  mounted () {
-    console.log(foodCategories)
   }
+  // mounted () {
+  //   console.log(foodCategories)
+  // }
   // methods: {
   //   getImg (str) {
   //     return require('../assets/img/' + str)
@@ -97,17 +67,17 @@ export default {
       max-width: 50%;
       margin: 2rem auto;
     }
-    .hero{
-      background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('../assets/img/banner-3-2x-scaled.jpg');
-      background-position: center;
-      background-size: cover;
-      padding: 10rem 0;
-      color: white;
-      p{
-        font-size: 3rem;
-        // max-width: 50%;
-        margin-bottom: 2rem;
-      }
-    }
+    // .hero{
+    //   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('../assets/img/banner-3-2x-scaled.jpg');
+    //   background-position: center;
+    //   background-size: cover;
+    //   padding: 10rem 0;
+    //   color: white;
+    //   p{
+    //     font-size: 3rem;
+    //     // max-width: 50%;
+    //     margin-bottom: 2rem;
+    //   }
+    // }
   }
 </style>

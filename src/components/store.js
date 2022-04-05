@@ -94,11 +94,92 @@ const state = Vue.observable({
       price: '$12.00',
       sale: false
     }
+  ],
+  usersTestimonials: [
+    {
+      name: 'Lisa Smith',
+      img: 'avatar-3.jpg',
+      text: 'Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.'
+    },
+    {
+      name: 'Melissa Green',
+      img: 'avatar-1.jpg',
+      text: 'Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.'
+    },
+    {
+      name: 'Sam Lewis',
+      img: 'avatar-4.jpg',
+      text: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.'
+    }
+  ],
+  blogArticles: [
+    {
+      img: 'blog-1.jpg',
+      title: 'How to \'loose leash walk\' your dog',
+      date: 'April 21st, 2020'
+    },
+    {
+      img: 'blog-2.jpg',
+      title: 'Stop cats from scratching furniture',
+      date: 'April 19th, 2020'
+    },
+    {
+      img: 'blog-3.jpg',
+      title: 'Where to buy the best pet food',
+      date: 'April 18th, 2020'
+    },
+    {
+      img: 'blog-4.jpg',
+      title: 'Proper care for your pet toys',
+      date: 'April 17th, 2020'
+    }
+  ],
+  newProducts: [
+    {
+      name: 'Colored pet bed',
+      img: 'product-8.jpg',
+      price: '$25.00',
+      sale: false
+    },
+    {
+      name: 'Colorful ball set',
+      img: 'product-2.jpg',
+      price: '$25.00',
+      sale: false
+    },
+    {
+      name: 'Dog bone',
+      img: 'product-3.jpg',
+      price: '$29.00',
+      sale: true,
+      discountPrice: '$18.00'
+    },
+    {
+      name: 'Animal transport bag',
+      img: 'product-4.jpg',
+      price: '$29.00',
+      sale: false
+    },
+    {
+      name: 'Animal transport cage',
+      img: 'product-5.jpg',
+      price: '$35.00',
+      sale: false
+    },
+    {
+      name: 'Closable cat litter',
+      img: 'product-10.jpg',
+      price: '$16.00',
+      sale: false
+    }
   ]
 })
 export const shopCategories = [...state.shopCategories]
 export const foodCategories = [...state.foodCat]
 export const bestSellers = [...state.bestSellers]
+export const usersTestimonials = [...state.usersTestimonials]
+export const blogArticles = [...state.blogArticles]
+export const newProducts = [...state.newProducts]
 
 export default {
   shopCategories: [...state.shopCategories]

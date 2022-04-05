@@ -1,28 +1,15 @@
 <template>
   <section>
     <div class="container">
-      <h2>Get the best tips&tricks</h2>
-      <span>Recent article</span>
+      <h2 class="text-center">Get the best tips&tricks</h2>
+      <p class="text-center mb-5">Recent article</p>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-        <div class="col">
-          <img :src="require('../assets/img/blog-1.jpg')" alt="" class="card-img-top">
-          <p>How to 'loose leash walk' your dog</p>
-          <small>April 21st, 2020</small>
-        </div>
-        <div class="col">
-          <img :src="require('../assets/img/blog-1.jpg')" alt="" class="card-img-top">
-          <p>How to 'loose leash walk' your dog</p>
-          <small>April 21st, 2020</small>
-        </div>
-        <div class="col">
-          <img :src="require('../assets/img/blog-1.jpg')" alt="" class="card-img-top">
-          <p>How to 'loose leash walk' your dog</p>
-          <small>April 21st, 2020</small>
-        </div>
-        <div class="col">
-          <img :src="require('../assets/img/blog-1.jpg')" alt="" class="card-img-top">
-          <p>How to 'loose leash walk' your dog</p>
-          <small>April 21st, 2020</small>
+        <div v-for="(article, index) in blogArticles" :key="index" class="col">
+          <img :src="require('../assets/img/' + article.img)" alt="" class="card-img-top">
+          <div class="card-body px-4">
+            <p class="fs-4 mb-1">{{ article.title }}</p>
+            <small>{{ article.date }}</small>
+          </div>
         </div>
       </div>
       <button> Read more</button>
@@ -31,11 +18,20 @@
 </template>
 
 <script>
+import { blogArticles } from './store'
+
 export default {
-  name: 'PetBlog'
+  name: 'PetBlog',
+  computed: {
+    blogArticles () {
+      return blogArticles
+    }
+  }
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  section{
+    padding-top: 5rem;
+  }
 </style>

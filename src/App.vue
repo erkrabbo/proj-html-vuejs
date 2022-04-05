@@ -3,18 +3,21 @@
     <pet-header />
     <pet-nav />
     <router-view/>
+    <pet-footer />
   </div>
 </template>
 
 <script>
 import PetHeader from './components/PetHeader.vue'
 import PetNav from './components/PetNav.vue'
+import PetFooter from './components/PetFooter.vue'
 
 export default {
   name: 'App',
   components: {
     PetHeader,
-    PetNav
+    PetNav,
+    PetFooter
   }
 }
 </script>
